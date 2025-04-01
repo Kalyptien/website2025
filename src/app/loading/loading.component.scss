@@ -1,0 +1,19 @@
+.isOpen{
+    width: 100%;
+}
+
+.isClose{
+    width: 0%;
+}
+
+#loading-main{
+    background-color: white;
+    z-index: 9999;
+}
+
+#loading-main, .loading-children{
+    position: fixed;
+    height: 100%;
+    z-index: 9999;
+    transition: width 3s ease;
+}

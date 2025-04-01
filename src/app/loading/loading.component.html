@@ -1,0 +1,11 @@
+<div id="loading-main" [className]="isOpen ? 'isOpen' : 'isClose'">
+</div>
+
+@for(color of colorArray; track color.pos) {
+    <div class="loading-children" 
+    [style.background]="color.color"
+    [style.z-index]="9999 - color.pos"
+    [style.transition-delay]="'.' + color.pos + 1 + 's'"
+    [className]="isOpen ? 'loading-children | isOpen' : 'loading-children | isClose'">
+    </div>
+}
