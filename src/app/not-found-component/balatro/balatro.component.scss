@@ -1,0 +1,29 @@
+@use "../../css/font.scss";
+
+#content{
+    position: fixed;
+    z-index: 100;
+
+    #center{
+        width: 100vw;
+        height: 65vh;
+        text-align: center;
+        margin-top: 30vh ;
+
+        #title{
+            width: 40%;
+            image-rendering: pixelated;
+        }
+    }
+
+    #annotation{
+        font-size: 0.1em;
+        margin: 10px;
+        font-family: 'VlanellaOut', sans-serif;
+        color: white;
+    }
+}
+
+#webGL{
+    z-index: 0;
+}

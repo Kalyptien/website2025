@@ -1,19 +1,61 @@
+@keyframes shineSVG {
+    0% {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(2213%) hue-rotate(154deg) brightness(104%) contrast(125%);
+    }
+    50% {
+      filter: brightness(0) saturate(100%) invert(15%) sepia(2%) saturate(442%) hue-rotate(328deg) brightness(101%) contrast(83%);
+    }
+    100% {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(2213%) hue-rotate(154deg) brightness(104%) contrast(125%);
+    }
+}
+
 .isOpen{
-    width: 100%;
+    transform: translate(0px, 0px);
 }
 
 .isClose{
-    width: 0%;
+    transform: translate(-100vw, 0px);
+}
+
+.loading-children{
+    width: 100%;
 }
 
 #loading-main{
-    background-color: white;
+    background-color: #fdfdfd;
     z-index: 9999;
+    width: 100%;
+}
+
+#loading-content{
+    justify-content: center;
+    text-align: center;
+    padding-top: 35vh;
+}
+
+#loading-img{
+    filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(2213%) hue-rotate(154deg) brightness(104%) contrast(125%);
+        animation: shineSVG 10s linear infinite;
+}
+
+#loading-text{
+    background: linear-gradient(to right, #d6d6d6 20%, #718E7A 50%, #d6d6d6 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: #d6d6d6;
+    font-family: 'Vlanella', sans-serif;
+    font-size: 0.5em;
+
+    animation: shineSVG 10s linear infinite;
 }
 
 #loading-main, .loading-children{
     position: fixed;
     height: 100%;
     z-index: 9999;
-    transition: width 3s ease;
+    transition: transform 3s ease;
 }

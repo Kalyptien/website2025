@@ -13,7 +13,7 @@ export class HomepageComponent {
 
   public isOpen = true;
 
-  public colorArray = [new Color("#fffdd2", 1), new Color("#e5e1b2", 2), new Color("#e5e1b2", 3), new Color("#66836f", 4), new Color("#281d19", 5)];
+  public colorArray = [new Color("#fffdd7", 1), new Color("#e8e5bc", 2), new Color("#a8ae8a", 3), new Color("#718e7a", 4), new Color("#2e2119", 5)];
 
   constructor(){
     window.onbeforeunload = function() {window.scrollTo(0,0);}
