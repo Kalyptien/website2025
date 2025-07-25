@@ -3,17 +3,18 @@ import { Color } from '../types/color';
 import { LoadingComponent } from '../loading/loading.component';
 
 @Component({
-  selector: 'app-homepage',
+  selector: 'app-a-propos',
   imports: [LoadingComponent],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.scss'
+  templateUrl: './a-propos.component.html',
+  styleUrl: './a-propos.component.scss'
 })
 
-export class HomepageComponent {
+export class AProposComponent {
 
   public isOpen = true;
+  public age = 0;
 
-  public colorArray = [new Color("#fffdd7", 1), new Color("#e8e5bc", 2), new Color("#a8ae8a", 3), new Color("#718e7a", 4), new Color("#2e2119", 5)];
+  public colorArray = [new Color("#ddffff", 1), new Color("#bbe5ff", 2), new Color("#97adcd", 3), new Color("#8e839e", 4), new Color("#1e474b", 5)];
 
   constructor(){
     window.onbeforeunload = function() {window.scrollTo(0,0);}
@@ -22,6 +23,9 @@ export class HomepageComponent {
           this.isOpen = false;
       },
       100);
+
+      const date = new Date();
+      this.age =  date.getFullYear() - 2001;
   }
 
 }

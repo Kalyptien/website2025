@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Color } from '../types/color';
 import { LoadingComponent } from '../loading/loading.component';
 
 @Component({
-  selector: 'app-homepage',
+  selector: 'app-projet',
   imports: [LoadingComponent],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.scss'
+  templateUrl: './projet.component.html',
+  styleUrl: './projet.component.scss'
 })
 
-export class HomepageComponent {
+export class ProjetComponent {
 
   public isOpen = true;
 

@@ -1,7 +1,5 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoadingComponent } from './loading/loading.component';
-import { HomepageComponent } from "./homepage/homepage.component";
 
 @Component({
   selector: 'app-root',

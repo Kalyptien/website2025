@@ -7,7 +7,7 @@ $important-2: #718e7a;
 $dark-1: #2e2119;
 $dark-2: #120d0b;
 
-#homepage-body{
+#portfolio-body{
     background-color: $dark-1;
     height: 100%;
     z-index: 0;
@@ -50,9 +50,9 @@ header{
     }
 }
 
-#homepage-header{
+#portfolio-header{
     width: 100%;
-    height: 50rem;
+    height: 15rem;
     background-color: $important-2;
     background-image: url(../../assets/img/SoleilBackground.svg);
 
@@ -60,85 +60,63 @@ header{
         font-family: 'Vlanella', sans-serif;
         margin: 0px;
         text-align: end;
-        padding-top: 20rem;
+        padding-top: 5rem;
         padding-right: 12.5rem;
         font-size: 1.2em;
         color: $dark-1;
     }
 }
 
-.homepage-content{
+.portfolio-content{
     background-color: $light-1;
-    padding: 6rem 0px;
     font-family: sans-serif;
+    text-align: center;    
 
+    #seperator-pixelart{
+        height: 20em;
+        font-family: 'Charley', sans-serif;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #111111;
+        background-image: url(../../assets/img/PixelArtBackground.png);
+    }
 
-    h2{
-        font-family: 'Vlanella', sans-serif;
+    #seperator-photo{
+        height: 20em;
+        font-family: 'Charley', sans-serif;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #111111;
+        background-image: url(../../assets/img/PhotoBackground.png);
+    }
+
+    #seperator-model{
+        height: 20em;
+        font-family: 'Charley', sans-serif;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #111111;
+        background-image: url(../../assets/img/3DBackground.png);
+    }
+
+    h1{
+        color: $important-2;
+        font-size: 4em;
+        padding: 1.5em 0px;
         margin: 0px;
-        text-align: center;
-        font-size: 1.2em;
-        color:  $important-2;
-    }
-
-    p{
-        justify-content: center;
-        text-align: center;
-        font-size: 1.5em;
-        color: $dark-2;
-    }
-
-    a{
-        text-decoration: none;
-        font-weight: 700;
-        color: $dark-2;
-    }
-
-    a:hover{
-        color: #718e7a;
-    }
-    
-    h3{
-        margin: 0px;
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 1rem;
-        color:  $important-2;
-    }
-    
-    #homepage-light-page{
-        padding-top: 5em;
-        justify-content: space-around;
-        display: flex;
-
-        div{
-            width: 25%;
-
-            p{
-                font-size: 1em;
-            }
-
-            a{
-                color: $important-1;
-                margin-top: 2em;
-                display: block;
-                text-align: center;
-                width: 25%;
-                text-decoration: none;
-                width: 100%;
-            }
-
-            a:hover{
-                color: $important-2;
-                text-shadow: $important-1 0px 0px 50px;
-            }
-        }
-
     }
 }
 
-#homepage-spacer-3D{
-    height: 40rem;
+#portfolio-spacer-3D{
+    height: 5rem;
+    background-image: url(../../assets/img/SoleilBackground.svg);
+}
+
+#portfolio-spacer-3D-last{
+    height: 15rem;
     background-image: url(../../assets/img/SoleilBackground.svg);
 }
 

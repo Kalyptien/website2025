@@ -1,13 +1,13 @@
 @use "../css/font.scss";
 
-$light-1: #fffdd2;
-$light-2: #e5e1b2;
-$important-1: #a8ae8a;
-$important-2: #718e7a;
-$dark-1: #2e2119;
-$dark-2: #120d0b;
+$light-1: #ddffff;
+$light-2: #bbe5ff;
+$important-1: #97adcd;
+$important-2: #8e839e;
+$dark-1: #1e474b;
+$dark-2: #090f0f;
 
-#homepage-body{
+#a-propos-body{
     background-color: $dark-1;
     height: 100%;
     z-index: 0;
@@ -27,11 +27,11 @@ header{
         width: 50px;
         margin: 15px;
         margin-top: -15px;
-        filter: brightness(0) saturate(100%) invert(96%) sepia(3%) saturate(2175%) hue-rotate(355deg) brightness(103%) contrast(112%);
+        filter: brightness(0) saturate(100%) invert(98%) sepia(30%) saturate(719%) hue-rotate(133deg) brightness(104%) contrast(106%);
     }
 
     img:hover{
-        filter: brightness(0) saturate(100%) invert(55%) sepia(16%) saturate(441%) hue-rotate(86deg) brightness(94%) contrast(86%);
+        filter: brightness(0) saturate(100%) invert(58%) sepia(15%) saturate(429%) hue-rotate(222deg) brightness(89%) contrast(88%);
     }
 
     a{
@@ -50,24 +50,24 @@ header{
     }
 }
 
-#homepage-header{
+#a-propos-header{
     width: 100%;
-    height: 50rem;
-    background-color: $important-2;
+    height: 15rem;
+    background-color: $dark-1;
     background-image: url(../../assets/img/SoleilBackground.svg);
 
     h1{
         font-family: 'Vlanella', sans-serif;
         margin: 0px;
         text-align: end;
-        padding-top: 20rem;
+        padding-top: 5rem;
         padding-right: 12.5rem;
         font-size: 1.2em;
-        color: $dark-1;
+        color: $important-1;
     }
 }
 
-.homepage-content{
+.a-propos-content{
     background-color: $light-1;
     padding: 6rem 0px;
     font-family: sans-serif;
@@ -106,7 +106,7 @@ header{
         color:  $important-2;
     }
     
-    #homepage-light-page{
+    #a-propos-light-page{
         padding-top: 5em;
         justify-content: space-around;
         display: flex;
@@ -137,8 +137,8 @@ header{
     }
 }
 
-#homepage-spacer-3D{
-    height: 40rem;
+#a-propos-spacer-3D{
+    height: 15rem;
     background-image: url(../../assets/img/SoleilBackground.svg);
 }
 
@@ -161,11 +161,11 @@ footer{
 
         img{
             width: 125px;
-            filter: brightness(0) saturate(100%) invert(96%) sepia(3%) saturate(2175%) hue-rotate(355deg) brightness(103%) contrast(112%);
+            filter: brightness(0) saturate(100%) invert(98%) sepia(30%) saturate(719%) hue-rotate(133deg) brightness(104%) contrast(106%);
         }
 
         img:hover{
-            filter: brightness(0) saturate(100%) invert(55%) sepia(16%) saturate(441%) hue-rotate(86deg) brightness(94%) contrast(86%);
+            filter: brightness(0) saturate(100%) invert(58%) sepia(15%) saturate(429%) hue-rotate(222deg) brightness(89%) contrast(88%);
         }
     }
 
